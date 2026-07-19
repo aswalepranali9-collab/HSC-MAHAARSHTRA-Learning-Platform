@@ -7,7 +7,7 @@
 }
 
 .top-card-container {
-    height: 238px;
+    height: 258px;
     width: auto;
     background-color: #c6dbef;
     padding-top: 48px;
@@ -227,3 +227,58 @@
     font-size: 30px;
     color: #374151;
 }
+
+
+.ai-assistant-card {
+    margin: 15px;
+    padding: 20px;
+    border-radius: 18px;
+    background-color: #f3e8ff;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.12);
+    text-align: center;
+}
+
+.ai-assistant-card h1 {
+    font-size: 26px;
+    color: #1f2937;
+}
+
+.ai-assistant-card p {
+    color: #4b5563;
+}
+
+#userQuestion {
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.ai-assistant-card button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#aiAnswer {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    min-height: 40px;
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
