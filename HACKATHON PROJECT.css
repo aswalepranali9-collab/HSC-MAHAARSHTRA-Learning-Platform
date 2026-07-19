@@ -6,6 +6,21 @@
     object-fit: cover;
 }
 
+.carousel-caption {
+    color: #003366;
+    text-shadow: 1px 1px 2px white;
+}
+
+.carousel-caption h5 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 16px;
+}
+
+
 .top-card-container {
     height: 258px;
     width: auto;
@@ -13,6 +28,17 @@
     padding-top: 48px;
     border-radius: 8px;
     margin: 8px;
+}
+
+.study-heading {
+    color: black;
+    font-size: 28px;
+    font-weight: solid;
+    font-family: "Roboto";
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 14px;
 }
 
 .sub-heading_1 {

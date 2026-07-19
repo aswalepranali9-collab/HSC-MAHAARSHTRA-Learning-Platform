@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 async function askAI() {
     let question = document.getElementById("userQuestion").value;
     let answerBox = document.getElementById("aiAnswer");
@@ -10,30 +9,21 @@ async function askAI() {
 
     answerBox.innerText = "Thinking...";
 
-    // Gemini connection will be added here
-}
+    try {
+        const response = await fetch("/api/askAI", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ question })
+        });
 
-function display(sectionId) {
-    let sections = document.querySelectorAll("body > div");
+        const data = await response.json();
 
-    sections.forEach(function(section) {
-        section.classList.add("d-none");
-    });
-
-    document.getElementById(sectionId).classList.remove("d-none");
-=======
-async function askAI() {
-    let question = document.getElementById("userQuestion").value;
-    let answerBox = document.getElementById("aiAnswer");
-
-    if (question === "") {
-        answerBox.innerText = "Please enter your doubt.";
-        return;
+        answerBox.innerText = data.answer || data.error;
+    } catch (error) {
+        answerBox.innerText = "AI connection failed.";
     }
-
-    answerBox.innerText = "Thinking...";
-
-    // Gemini connection will be added here
 }
 
 function display(sectionId) {
@@ -44,5 +34,4 @@ function display(sectionId) {
     });
 
     document.getElementById(sectionId).classList.remove("d-none");
->>>>>>> 4811bee9f3961b3aaceed81071c5bf8d7eea9792
 }
