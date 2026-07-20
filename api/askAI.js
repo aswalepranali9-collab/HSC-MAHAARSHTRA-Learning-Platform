@@ -33,13 +33,5 @@ export default async function handler(req, res) {
 
     const data = await response.json();
 
-    res.status(200).json({
-      answer: data.candidates[0].content.parts[0].text
-    });
-
-  } catch (error) {
-    res.status(500).json({
-      error: "AI response failed"
-    });
-  }
-}
+  console.log("Gemini status:", response.status);
+console.log("Gemini response:", JSON.stringify(data));
