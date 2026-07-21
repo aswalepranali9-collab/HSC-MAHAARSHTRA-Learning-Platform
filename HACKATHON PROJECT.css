@@ -2,24 +2,41 @@
 
 .carousel-inner {
     padding: 8px;
-    height: 280px;
+    height: 8px;
+    min-height: 320px; 
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item img {
+    height: 400px;
     object-fit: cover;
 }
 
 .carousel-caption {
-    color: #003366;
-    text-shadow: 1px 1px 2px white;
+    position: absolute ;
+    bottom: 80px ;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    z-index: 999;
 }
 
 .carousel-caption h5 {
-    font-size: 26px;
+    color: white;
+    font-size: 32px;
     font-weight: bold;
+    text-shadow: 2px 2px 6px black;
 }
 
 .carousel-caption p {
-    font-size: 16px;
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 6px black;
 }
-
 
 .top-card-container {
     height: 258px;

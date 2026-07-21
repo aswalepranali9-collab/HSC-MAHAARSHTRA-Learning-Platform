@@ -14,8 +14,7 @@
 </head>
 
 <body>
-
-     <div id="sectionHomepage">
+  <div id="sectionHomepage">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -46,7 +45,6 @@
                     </div>
                 </div>
             </div>
-
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -63,7 +61,7 @@
             <button class="btn btn-primary" onclick="display('sectionBridgeCoursepage')">Start Learning</button>
         </div>
         <div class="card-items">
-             <h2 class="study-heading">📚 What do you want to study today?</h2>
+            <h2 class="study-heading">📚 What do you want to study today?</h2>
             <div class="d-flex flex-row justify-content-center">
                 <div class="container physics-card" onclick="display('sectionPhysicsPage')">
                     <h1 class="main-sub-heading">
@@ -78,7 +76,6 @@
                     <p class="paragraph"> ➜</p>
                 </div>
             </div>
-         </div> 
             <div class="d-flex flex-row justify-content-center">
                 <div class="container maths-card" onclick="display('sectionMathsPage')">
                     <h1 class="main-sub-heading">
@@ -93,6 +90,7 @@
                     <p class="paragraph"> ➜</p>
                 </div>
             </div>
+        </div>
         <div class="notes-card" onclick="display('sectionNotesPage')">
 
             <h1 class="notes-title">📝 Notes</h1>
@@ -102,9 +100,7 @@
             <div class="notes-footer">
                 <span class="notes-arrow">➜ </span>
             </div>
-        </div> 
-
-
+        </div>
     <div class="ai-assistant-card">
     <h1>🤖 AI Study Assistant</h1>
     <p>Ask your HSC related doubts</p>
@@ -115,9 +111,9 @@
 
      <div id="aiAnswer"></div>
     </div>
-   </div>
-    
-<div id="sectionBridgeCoursepage">
+    </div>
+
+   <div id="sectionBridgeCoursepage" class="d-none">
         <div class="BridgeCoursepage d-flex flex-column justify-content-end">
             <div class="card-image">
                 <div class="videos">
@@ -156,7 +152,7 @@
                 <button class="btn btn-dark" onclick="display('sectionHomepage')">Back</button>
             </div>
         </div>
-    </div>      
+    </div>
     
     <div id="sectionPhysicsPage" class="d-none">
         <div class="container subject-page">
